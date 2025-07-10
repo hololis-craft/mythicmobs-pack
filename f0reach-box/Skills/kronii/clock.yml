@@ -1,0 +1,19 @@
+# Author: f0reachARR
+kronii_clock:
+  Skills:
+  - orbital{onTick=kronii_clock_tick;onHit=kronii_clock_hit;points=40;interval=1;duration=200;charges=1;radius=15;hitradius=15;hitPlayers=false} @selfEyeLocation
+
+kronii_clock_tick:
+  Skills:
+  - particleline{particle=end_rod;amount=1;fromorigin=true;speed=100} @self
+  - raytraceTo{entityskill=kronii_clock_hit;fromorigin=true;
+      raytraceConditions=[
+        - iscaster false
+      ]} @self
+
+kronii_clock_hit:
+  Skills:
+  - damage{amount=5;damagecause=LIGHTNING} @target
+  - sound{s=entity.generic.explode;v=0.5;p=1.0} @target
+  - particle{p=end_rod;amount=10;speed=0.1;spread=0.2} @target
+  - effect:sound{s=entity.lightning_bolt.thunder;v=0.5;p=1.0} @target

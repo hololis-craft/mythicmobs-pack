@@ -1,0 +1,6 @@
+# Author: f0reachARR
+kronii_clock:
+  Id: clock
+  Display: "<aqua>とけい</aqua>"
+  Skills:
+  - skill{skill=kronii_clock} @self ~onUse

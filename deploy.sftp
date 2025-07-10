@@ -1,0 +1,3 @@
+cd plugins/MythicMobs/packs
+rm f0reach-box
+put -R f0reach-box/ .
