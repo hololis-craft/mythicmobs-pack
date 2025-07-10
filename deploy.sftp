@@ -1,3 +1,5 @@
 cd plugins/MythicMobs/packs
 rm f0reach-box
 put -R f0reach-box/ .
+rm tukuyomi032-box
+put -R tukuyomi032-box/ .
