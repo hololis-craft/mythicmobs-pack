@@ -5,7 +5,6 @@ suisei_head:
   Attributes:
     mainhand:
       MovementSpeed: 0.15
-      Health: 6
   Enchantments:
   - UNBREAKING 1
   Skills:
